@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lubricentro y Servivios">
+    <meta name="keywords" content="lubricantes, cambio, aceite, lubricentro">
+    <title>Lubricentro Car Center</title>
+    <link rel="stylesheet" href="../sass/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../img/carcenter.ico" type="imahe/x-icon">
+</head>  
+<body>
+    <header> 
+        <div class="headerLogo" >
+          <img src="../img/carcenter.png" alt="Lubricentro Car Center">
+        </div> 
+        <nav class="menuNav">
+          <input type="checkbox" id="ckbox">
+          <label for="ckbox" class="desplegable">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+          </label>
+          <!--ICONOS https://fontawesome.com/v4/icons/-->
+          <ul class="menu-box">
+              <li><a href="../index.html" class="fa fa-tint" id="inicio"> INICIO</a></li>
+              <li><a href="./productos.html" class="fa fa-tint"> PRODUCTOS</a></li>
+              <li><a href="../pages/servicios.html" class="fa fa-tint"> SERVICIOS</a></li>
+              <li><a href="../pages/servicios.html" class="fa fa-tint"> PROMOCIONES</a></li>
+              <li><a href="../pages/contacto.html" class="fa fa-tint"> CONTACTO</a></li>
+          </ul>
+        </nav>
+        
+    </header>
+    <main id="intro">
+        <h4>PROVEDORES</h4>    
+    </main>
+
+    <div class="contProv">
+        <div class="cuadro">
+            <div class="nombre">
+                <label for="fname">Nombre y Apellido:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="Ingrese su nombre..." required>
+            </div>
+            <div class="mail">
+                <label for="fmail"> E-mail:</label><br>
+                <input required type="email" id="femail" name="femail">
+            </div>    
+            <div class="subArch">
+                <label for="archivo" >Subir archivo:</label>
+                <input type="file" id="archivo" name="files"  multiple>
+            </div>
+            <div class="option">
+                    <p>Asunto</p>
+                    <input type="checkbox" id="op1" name="op1" value="Ventas">
+                    <label for="op1">Ventas</label><br>
+                    <input type="checkbox" id="op2" name="op2" value="Cobros">
+                    <label for="op2">Cobros</label><br>
+                    <input type="checkbox" id="op3" name="op3" value="Listas">
+                    <label for="op3">Listas</label><br>
+            </div>
+            <div class="comenta">
+                <label>Comentarios:</label>
+                <textarea name="message" style="width:100%; height:20vh;" required>Dejanos tu mensaje.</textarea>
+                <input type="submit" value="Enviar" class="btnEnv"> 
+            </div>
+            
+        </div>
+        </div>
+</body>
+</html>
